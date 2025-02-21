@@ -1,21 +1,36 @@
-The AI Trading Bot is an automated trading strategy that uses sentiment analysis to make informed trading decisions. Leveraging advanced machine learning models and APIs, it aims to outperform major brokerages.
+# AI Trading Bot
 
-Features
+The AI Trading Bot is a sophisticated automated trading strategy, engineered to leverage sentiment analysis for making insightful trading decisions. This bot incorporates cutting-edge machine learning models and APIs, striving to surpass the performance of major brokerage platforms.
 
-Automated trading using Alpaca API and Lumibot
-Sentiment analysis with FinBERT and PyTorch transformer models
-Historical data analysis with YahooDataBacktesting
-REST API for real-time strategy execution
-Setup Instructions:
+## Features
 
-Clone the repository: git clone https://github.com/yourusername/https://github.com/Mahmoud-Berkoti/AI-Trading-Bot.git cd AI-Trading-Bot
+- **Automated Trading**: Seamlessly integrates with the Alpaca API and Lumibot for automated trade execution.
+- **Sentiment Analysis**: Utilizes FinBERT and PyTorch transformer models to analyze market sentiment effectively.
+- **Historical Data Analysis**: Employs YahooDataBacktesting for robust backtesting based on historical data.
+- **Real-Time Strategy Execution**: Features a REST API that facilitates real-time strategy execution.
 
-Install required libraries: pip install alpaca-trade-api lumibot transformers torch
+## Setup Instructions
 
-Download pre-trained models: from transformers import AutoTokenizer, AutoModelForSequenceClassification tokenizer = AutoTokenizer.from_pretrained("ProsusAI/finbert") model = AutoModelForSequenceClassification.from_pretrained("ProsusAI/finbert")
+### Cloning the Repository
 
-Set up your Alpaca API keys: Replace the placeholders in the MLTrader class with your Alpaca API credentials
+```bash
+git clone https://github.com/Mahmoud-Berkoti/AI-Trading-Bot.git
 
-Running the Strategy To backtest and run the strategy, run the following script: from datetime import datetime from lumibot.brokers import Alpaca from lumibot.backtesting import YahooDataBacktesting from your_script import MLTrader
+cd AI-Trading-Bot
+```
+# Installing Dependencies
 
-if name == "main": start_date = datetime(2020, 1, 1) end_date = datetime(2024, 7, 23) broker = Alpaca(MLTrader.ALPACA_CREDS) strategy = MLTrader(name='mlstrat', broker=broker, parameters={"symbol": "SPY", "cash_at_risk": 0.5}) strategy.backtest(YahooDataBacktesting, start_date, end_date, parameters={"symbol": "SPY", "cash_at_risk": 0.5})
+## Install the required libraries using pip:
+
+```bash
+pip install alpaca-trade-api lumibot transformers torch
+```
+
+# Downloading Pre-Trained Models
+
+```python
+from transformers import AutoTokenizer, AutoModelForSequenceClassification
+
+tokenizer = AutoTokenizer.from_pretrained("ProsusAI/finbert")
+model = AutoModelForSequenceClassification.from_pretrained("ProsusAI/finbert")
+```
