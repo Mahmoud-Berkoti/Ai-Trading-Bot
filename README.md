@@ -38,4 +38,4 @@ tokenizer = AutoTokenizer.from_pretrained("ProsusAI/finbert")
 model = AutoModelForSequenceClassification.from_pretrained("ProsusAI/finbert")
 ```
 
-###Configuration
+### Configuration
