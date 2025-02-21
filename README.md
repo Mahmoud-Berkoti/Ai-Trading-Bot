@@ -29,7 +29,7 @@ pip install alpaca-trade-api lumibot transformers torch
 pip install alpaca-trade-api lumibot transformers torch
 ```
 
-## Downloading Pre-Trained Models
+## Downloading Pre-Trained Models:
 
 ```python
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
@@ -38,7 +38,7 @@ tokenizer = AutoTokenizer.from_pretrained("ProsusAI/finbert")
 model = AutoModelForSequenceClassification.from_pretrained("ProsusAI/finbert")
 ```
 
-## Configuration
+## Configuration:
 
 Set up your Alpaca API keys by replacing the placeholders in the MLTrader class with your personal Alpaca API credentials.
 
