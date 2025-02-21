@@ -42,7 +42,7 @@ model = AutoModelForSequenceClassification.from_pretrained("ProsusAI/finbert")
 
 Set up your Alpaca API keys by replacing the placeholders in the MLTrader class with your personal Alpaca API credentials.
 
-## Running the Strategy
+## Running the Strategy:
 
 To backtest and run the strategy, use the script below:
 
