@@ -20,6 +20,9 @@ cd AI-Trading-Bot
 ```
 # Installing Dependencies
 
+```bash
+pip install alpaca-trade-api lumibot transformers torch
+```
 ## Install the required libraries using pip:
 
 ```bash
