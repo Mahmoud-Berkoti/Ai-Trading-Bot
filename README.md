@@ -41,3 +41,27 @@ model = AutoModelForSequenceClassification.from_pretrained("ProsusAI/finbert")
 ## Configuration
 
 Set up your Alpaca API keys by replacing the placeholders in the MLTrader class with your personal Alpaca API credentials.
+
+## Running the Strategy
+
+To backtest and run the strategy, use the script below:
+
+```python
+from datetime import datetime
+from lumibot.brokers import Alpaca
+from lumibot.backtesting import YahooDataBacktesting
+from your_script import MLTrader
+
+if __name__ == "__main__":
+    start_date = datetime(2020, 1, 1)
+    end_date = datetime(2024, 7, 23)
+    broker = Alpaca(MLTrader.ALPACA_CREDS)
+    strategy = MLTrader(name='mlstrat', broker=broker, parameters={"symbol": "SPY", "cash_at_risk": 0.5})
+    strategy.backtest(YahooDataBacktesting, start_date, end_date, parameters={"symbol": "SPY", "cash_at_risk": 0.5})
+```
+
+```css
+
+This code block represents the entire README, formatted with Markdown syntax, ready to be used in your repository to provide users with a comprehensive guide to setting up and running your AI Trading Bot.
+
+```
