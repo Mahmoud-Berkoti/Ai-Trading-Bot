@@ -59,9 +59,3 @@ if __name__ == "__main__":
     strategy = MLTrader(name='mlstrat', broker=broker, parameters={"symbol": "SPY", "cash_at_risk": 0.5})
     strategy.backtest(YahooDataBacktesting, start_date, end_date, parameters={"symbol": "SPY", "cash_at_risk": 0.5})
 ```
-
-```css
-
-This code block represents the entire README, formatted with Markdown syntax, ready to be used in your repository to provide users with a comprehensive guide to setting up and running your AI Trading Bot.
-
-```
