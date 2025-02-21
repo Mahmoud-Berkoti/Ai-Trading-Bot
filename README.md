@@ -40,4 +40,4 @@ model = AutoModelForSequenceClassification.from_pretrained("ProsusAI/finbert")
 
 ## Configuration
 
-### Set up your Alpaca API keys by replacing the placeholders in the MLTrader class with your personal Alpaca API credentials.
+Set up your Alpaca API keys by replacing the placeholders in the MLTrader class with your personal Alpaca API credentials.
