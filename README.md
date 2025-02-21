@@ -2,7 +2,7 @@
 
 The AI Trading Bot is a sophisticated automated trading strategy, engineered to leverage sentiment analysis for making insightful trading decisions. This bot incorporates cutting-edge machine learning models and APIs, striving to surpass the performance of major brokerage platforms.
 
-## Features
+## Features:
 
 - **Automated Trading**: Seamlessly integrates with the Alpaca API and Lumibot for automated trade execution.
 - **Sentiment Analysis**: Utilizes FinBERT and PyTorch transformer models to analyze market sentiment effectively.
@@ -11,14 +11,14 @@ The AI Trading Bot is a sophisticated automated trading strategy, engineered to 
 
 ## Setup Instructions
 
-### Cloning the Repository
+## Cloning the Repository:
 
 ```bash
 git clone https://github.com/Mahmoud-Berkoti/AI-Trading-Bot.git
 
 cd AI-Trading-Bot
 ```
-## Installing Dependencies
+## Installing Dependencies:
 
 ```bash
 pip install alpaca-trade-api lumibot transformers torch
@@ -29,7 +29,7 @@ pip install alpaca-trade-api lumibot transformers torch
 pip install alpaca-trade-api lumibot transformers torch
 ```
 
-# Downloading Pre-Trained Models
+## Downloading Pre-Trained Models
 
 ```python
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
