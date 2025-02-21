@@ -18,7 +18,7 @@ git clone https://github.com/Mahmoud-Berkoti/AI-Trading-Bot.git
 
 cd AI-Trading-Bot
 ```
-# Installing Dependencies
+## Installing Dependencies
 
 ```bash
 pip install alpaca-trade-api lumibot transformers torch
